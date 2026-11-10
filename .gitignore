@@ -6,7 +6,9 @@
 .tushare_token
 
 # Vendor data is licensed and must not be redistributed.
-data/
+# Anchored to the repository root so it cannot swallow a package
+# directory such as qrh/data.
+/data/
 *.csv
 *.parquet
 *.feather
