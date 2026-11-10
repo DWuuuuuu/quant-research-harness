@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quant-research-harness"
+version = "0.1.0"
+description = "A small, honest harness for cross-sectional equity strategy research"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Jeremy D. Wu" }]
+keywords = ["quantitative-finance", "backtesting", "factor-investing", "research"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Office/Business :: Financial :: Investment",
+  "Intended Audience :: Financial and Insurance Industry",
+]
+dependencies = ["numpy>=1.24", "pandas>=2.0"]
+
+[project.optional-dependencies]
+tushare = ["tushare>=1.2"]
+yfinance = ["yfinance>=0.2"]
+dev = ["pytest>=7.4", "ruff>=0.5", "mypy>=1.8"]
+
+[tool.setuptools.packages.find]
+include = ["qrh*"]
+
+# Ship the inline type hints so downstream mypy can use them (PEP 561).
+[tool.setuptools.package-data]
+qrh = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 95
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_ignores = true
+ignore_missing_imports = true

@@ -1,0 +1,32 @@
+# Credentials. Never commit these.
+.env
+.env.*
+!.env.example
+*.token
+.tushare_token
+
+# Vendor data is licensed and must not be redistributed.
+data/
+*.csv
+*.parquet
+*.feather
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Notebooks: strip outputs before committing.
+.ipynb_checkpoints/
+
+# OS
+.DS_Store

@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "quant-research-harness: a harness and falsifiable indicator inventory for cross-sectional equity research"
+message: "If you use this software or the indicator pool, please cite it."
+type: software
+authors:
+  - family-names: Wu
+    given-names: Jeremy D.
+    orcid: ""
+version: 0.1.0
+date-released: "2026-11-10"
+license: MIT
+license-url: "https://github.com/DWuuuuuu/quant-research-harness/blob/main/LICENSE"
+repository-code: "https://github.com/DWuuuuuu/quant-research-harness"
+keywords:
+  - quantitative finance
+  - factor investing
+  - backtesting
+  - research methodology
+  - point-in-time data
+abstract: >-
+  A small, honest harness for cross-sectional equity strategy research, with
+  look-ahead bias prevented structurally and asserted in tests, an explicit
+  transaction-cost and tax model, and a uniform metric suite. Ships with a
+  falsifiable indicator inventory for A-share and US equity markets in which
+  each indicator carries an availability lag, a three-axis evidence grade, a
+  sign hypothesis and an explicit rejection rule. Documentation is licensed
+  CC BY 4.0; code is MIT.
