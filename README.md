@@ -20,8 +20,8 @@ stronger one instead of looking different.
 * `qrh/backtest` is the engine and the cost model.
 * `qrh/metrics` computes Sharpe, CAGR, MAR, maximum drawdown, drawdown
   duration, and recovery duration.
-* `docs/indicators` is the research inventory: 11 indicator contracts across
-  A-share and US markets, about 4,000 lines.
+* `docs/indicators` is the research inventory: ten indicator modules across
+  A-share and US markets plus a reference sheet, about 4,100 lines.
 * `tests` has 51 tests. `examples` has three studies, one of which fails.
 
 What it does not do: trading, order management, live data, short selling,
